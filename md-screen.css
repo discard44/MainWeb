@@ -1,0 +1,36 @@
+header .hide{
+	display:none;
+	visibility: hidden;
+
+}
+header {
+	height: 48px;
+	background-color: #2FB569;
+}
+.contain {
+	float: right;
+	margin: 0 10px 0 0;
+	padding: 0;
+	position: relative;
+	top: 15px;
+
+}
+.closebtn {
+	visibility: none;
+	display: none;
+}
+.sidenav {
+	display: inline;
+}
+.uni{
+	margin: 0 2px;
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+.uni:hover {
+	color: white;
+}
+.activebtn {
+	color: white;
+}

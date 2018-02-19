@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="description" value="Beginner web designer ePortfoli">
+	<meta name="keywords" value="HTML, CSS, Java, JavaScript, PHP">
+	<meta name="author" value="Max">
+	<title>MAX's ePortfolio | Home</title>
+
+	<link rel="stylesheet" type="text/css" href="sm-screen.css" media="only screen and (min-width:380px) and (max-width:600px)">
+	<link rel="stylesheet" type="text/css" href="md-screen.css" media="only screen and (min-width:600px) and (max-width:1000px)">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+	<script src = "app.js"></script>
+	<script src = "script.js"></script>
+</head>
+<body >
+
+	<header>
+		<h2><a href = "#/">Maxs ePortfolio</a></h2>
+		<p onclick="openNav()" class = "hide stuff">&#9776</p>
+		<div class="contain">
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&rang;</a>
+		  <div class = "clearfix spacer"></div>
+		  <a href="#!/home" class = "uni" onclick = "closeNav()">About</a>
+		  <a href="#" class = "uni">Services</a>
+		  <a href="#" class = "uni">Clients</a>
+		  <a href="#" class = "uni">Contact</a>
+		</div>
+	</div>
+	</header>
+
+
+	<section ng-view>
+
+	</section>
+
+	<footer>
+		<p>&copy; Copyright Max 2017</p>
+	</footer>
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "100%";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0%";
+		}
+</script>
+</body>
+</html>
